@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #5BA199;
+}
+
+.rowik {
+    background-color: #DDBEAA;
+    width: 50%;
+    height: 100vh;
+}
+
+.colik {
+    margin: 85px;
+    margin-top: 45%;
+}
+
+.pagik {
+    display: flex;
+}
+
+.text {
+    margin: 0px auto;
+    margin-top: 10px;
+    font-style: italic;
+    color: aliceblue;
+}
+
+.butonicek {
+    background-color: #5BA199;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-top: 5px;
+}

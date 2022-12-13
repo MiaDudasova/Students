@@ -1,0 +1,62 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Nina",
+      "surname": "Mala",
+      "class": "1.A",
+      "age": 0,
+      "birthdate": "2007-11-15",
+      "studyField": "Network technologies",
+      "gender": "F",
+      "gradeAverage": 2,
+      "disabled": "false",
+      "awards": ""
+    },
+    {
+      "id": 2,
+      "name": "jozko",
+      "surname": "Mrkvicka",
+      "class": "4.C",
+      "age": null,
+      "birthdate": "2004-12-12",
+      "studyField": "Electrical engineering",
+      "gender": "M",
+      "gradeAverage": 1.4,
+      "disabled": "false",
+      "awards": ""
+    },
+    {
+      "id": 3,
+      "lastEdit": "2022-12-13T09:44:24.288Z",
+      "name": "Vlado",
+      "surname": "Dezko",
+      "class": "4.D",
+      "age": 0,
+      "birthdate": "2000-01-20",
+      "studyField": "Electrical engineering",
+      "gender": "Other",
+      "gradeAverage": 3.8,
+      "disabled": "true",
+      "awards": ""
+    },
+    {
+      "id": 4,
+      "lastEdit": "13. 12. 2022 10:45:57",
+      "name": "who",
+      "surname": "asked",
+      "class": "1.C",
+      "age": 0,
+      "birthdate": "2008-09-09",
+      "studyField": "Inteligent technologies",
+      "gender": "M",
+      "gradeAverage": 1,
+      "disabled": "false",
+      "awards": ""
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

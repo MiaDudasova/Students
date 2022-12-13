@@ -1,0 +1,183 @@
+<div class="container">
+    <div class="rowik">
+        <div class="coulik">
+            <div class="headerik">
+                <h5 class="listik"> Student List</h5>
+                <button type="button" id="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="butonicekk">Add
+                    Student</button>
+            </div>
+            <div class="tablicek">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Surname</th>
+                                <th scope="col">Class</th>
+                                <th scope="col">Birthdate</th>
+                                <th scope="col">Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let student of studentData">
+                                <td>{{student.name}}</td>
+                                <td>{{student.surname}}</td>
+                                <td>{{student.class}}</td>
+                                <td>{{student.birthdate}}</td>
+                                <td>{{student.gender}}</td>
+                                <td>
+                                    <button (click)="editStudent(student)" type="button" id="" data-bs-toggle="modal" data-bs-target="#Modal"
+                                        class="butonicek">Edit</button>
+                                    <button (click)="deleteStudent(student)" class="butonicek">Delete</button>
+                                    <button class="butonicek" [routerLink]="['/detail/'+student.id]">View Details</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal add -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Student</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" formControlName="name" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname" class="form-label">Surname</label>
+                        <input type="text" formControlName="surname" class="form-control" id="surname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="class" class="form-label">Class</label>
+                        <input type="text" formControlName="class" class="form-control" id="class">
+                    </div>
+                    <div class="mb-3">
+                        <label for="birthdate" class="form-label">Birthdate</label>
+                        <input type="date" formControlName="birthdate" class="form-control" id="birthdate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="study-field" class="form-label">Study field</label>
+                        <select formControlName="studyField" class="form-control" id="study-field" name="study-field">
+                            <option value="Artificial intelligence">Artificial intelligence</option>
+                            <option value="Inteligent technologies">Inteligent technologies</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Network technologies">Network technologies</option>
+                            <option value="Energetics">Energetics</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Electrical engineering">Electrical engineering</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select formControlName="gender" class="form-control" id="gender" name="gender">
+                            <option value="M">Man</option>
+                            <option value="F">Woman</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="grade-average" class="form-label">Grade average</label>
+                        <input type="number" formControlName="gradeAverage" class="form-control" id="grade-average" name="grade-average" min="1.0" max="5.0" step=0.1
+                            value=2 />
+                    </div>
+                    <div class="mb-3">
+                        <label for="disabled" class="form-label">Disabled</label>
+                        <select formControlName="disabled" class="form-control" id="disabled" name="disabled">
+                            <option value="false">No</option>
+                            <option value="true">Yes</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="awards" class="form-label">Awards</label>
+                        <input type="text" formControlName="awards" class="form-control" id="awards">
+                    </div>
+                </form>
+            </div>
+            <div class="footerik">
+                <button type="button" id="cancel" class="butoniky" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="butonik" (click)="postStudentDetails()">Add Student</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal edit -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Student</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" formControlName="name" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname" class="form-label">Surname</label>
+                        <input type="text" formControlName="surname" class="form-control" id="surname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="class" class="form-label">Class</label>
+                        <input type="text" formControlName="class" class="form-control" id="class">
+                    </div>
+                    <div class="mb-3">
+                        <label for="study-field" class="form-label">Study field</label>
+                        <select formControlName="studyField" class="form-control" id="study-field" name="study-field">
+                            <option value="Artificial intelligence">Artificial intelligence</option>
+                            <option value="Inteligent technologies">Inteligent technologies</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Network technologies">Network technologies</option>
+                            <option value="Energetics">Energetics</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Electrical engineering">Electrical engineering</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select formControlName="gender" class="form-control" id="gender" name="gender">
+                            <option value="M">Man</option>
+                            <option value="F">Woman</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="grade-average" class="form-label">Grade average</label>
+                        <input type="number" formControlName="gradeAverage" class="form-control" id="grade-average"
+                            name="grade-average" min="1.0" max="5.0" step=0.1 value=2 />
+                    </div>
+                    <div class="mb-3">
+                        <label for="disabled" class="form-label">Disabled</label>
+                        <select formControlName="disabled" class="form-control" id="disabled" name="disabled">
+                            <option value="false">No</option>
+                            <option value="true">Yes</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="awards" class="form-label">Awards</label>
+                        <input type="text" formControlName="awards" class="form-control" id="awards">
+                    </div>
+                </form>
+            </div>
+            <div class="footerik">
+                <button type="button" id="cancell" class="butoniky" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="butonik" (click)="updateStudent()">Edit Student</button>
+            </div>
+        </div>
+    </div>
+</div>

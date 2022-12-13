@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color: #5BA199;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowik {
+    background-color: #DDBEAA;
+    min-height: 100vh;
+    width: 60%;
+}
+
+.colik {
+    margin-top: 5%;
+    background-color: #DDBEAA;
+}
+
+.student-list {
+    margin: 15px 85px;
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+
+.xd {
+    margin: 20px;
+    background-color: #E5E3E4;
+    margin: 0px 80px;
+    border-radius: 25px;
+    padding: 10px 10px 10px 30px;
+}
+
+.butonik {
+    background-color: #5BA199;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 10px 0px;
+}
+
+.detail {
+    text-decoration: none;
+    color: #5BA199;
+    font-size: 20px;
+}

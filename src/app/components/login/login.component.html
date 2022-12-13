@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="rowik">
+        <div class="colik">
+            <div class="cardik">
+                <div class="card-body">
+                    <form [formGroup]="formValue">
+                        <div class="mb-3">
+                            <h4 class="loginik">Login</h4>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Meno</label>
+                            <input type="text" formControlName="meno" class="form-control" name="meno" id="menno">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Heslo</label>
+                            <input type="text" formControlName="heslo" class="form-control" name="heslo" id="heslo">
+                        </div>
+                        <button type="button" class="butonik" (click)="login()">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>

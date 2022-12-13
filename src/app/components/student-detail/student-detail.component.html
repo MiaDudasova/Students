@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="rowik">
+        <div class="colik">
+            <div class="studentik">
+                <h1>Student {{studentData.id}}</h1>
+            </div>
+            <div class="tablik">
+                <table class="tablicek">
+                    <tr>
+                        <td class="topic">Name:</td>
+                        <td>{{studentData.name}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Surname:</td>
+                        <td>{{studentData.surname}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Class:</td>
+                        <td>{{studentData.class}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Age:</td>
+                        <td>{{studentData.age}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Birthdate:</td>
+                        <td>{{studentData.birthdate}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Study field:</td>
+                        <td>{{studentData.studyField}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Gender:</td>
+                        <td>{{studentData.gender}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Grade average:</td>
+                        <td>{{studentData.gradeAverage}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Disabled:</td>
+                        <td>{{studentData.disabled}}</td>
+                    </tr>
+                    <tr>
+                        <td class="topic">Awards:</td>
+                        <td>{{studentData.awards}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <button class="butonicek" [routerLink]="['/students']">Back to Students</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #5BA199;
+}
+
+.rowik {
+    background-color: #DDBEAA;
+    width: 50.5%;
+    height: 100vh;
+}
+
+.colik {
+    margin: 85px;
+}
+
+.cardik {
+    background-color: #E5E3E4;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.loginik {
+    font-size: 30px;
+    font-family: monospace;
+    color: black;
+}
+
+.butonik {
+    background-color: #5BA199;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 10px 0px;
+}

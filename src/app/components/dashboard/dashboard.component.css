@@ -1,0 +1,148 @@
+.container {
+    background-color: #5BA199;
+    display: flex;
+    min-height: 100vh;
+}
+
+.rowik {
+    max-width: 90%;
+    background-color: #5BA199;
+    flex-direction: row;
+    display: flex;
+    margin: 0px auto;
+}
+
+.colik {
+    margin: 0px auto;
+    background-color: #5BA199;
+}
+
+.add-student {
+    background-color: #5BA199;
+    /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.xd {
+    background-color: #E5E3E4;
+    max-width: fit-content;
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: 18px;
+}
+
+
+.butonik {
+    background-color: #5BA199;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 0px 10px;
+}
+
+.coulik {
+    background-color: #DDBEAA;
+    width: 800px;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.kartik {
+    background-color: #DDBEAA;
+    padding: 5px;
+}
+
+.tablik {
+    width: 100%;
+}
+
+.butonicek {
+    background-color: #5BA199;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.tablicek {
+    margin: 20px;
+    background-color: #E5E3E4;
+    margin: 0px 10px;
+    border-radius: 25px;
+    padding: 20px 10px 10px 30px;
+}
+
+.listik {
+    margin: 15px 25px;
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+
+.headerik {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.butonicekk {
+    background-color: #5BA199;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-left: 55%;
+}
+
+.footerik {
+    display: flex;
+    margin: 0px 5px 15px 0px;
+}
+
+.butoniky {
+    background-color: aliceblue;
+    /* Green */
+    border: none;
+    color: #5BA199;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-left: 55%;
+    border: 1px solid #5BA199;
+}
+
+.butonik {
+    background-color: #5BA199;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+}

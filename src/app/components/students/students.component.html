@@ -1,0 +1,34 @@
+<div class="container">
+
+    <div class="rowik">
+        <div class="colik">
+            <h5 class="student-list"> Student List</h5>
+            <div class="xd">
+                <div class="card-body">
+                    <button type="button" class="butonik" (click)="goToLogin()">Login</button>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Surname</th>
+                                <th scope="col">Class</th>
+                                <th scope="col">Birthdate</th>
+                                <th scope="col">Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let student of studentData" [routerLink]="['/detail/' + student.id]">
+                                <td>{{student.name}}</td>
+                                <td>{{student.surname}}</td>
+                                <td>{{student.class}}</td>
+                                <td>{{student.birthdate}}</td>
+                                <td>{{student.gender}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
