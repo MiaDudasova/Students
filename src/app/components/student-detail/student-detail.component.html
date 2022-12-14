@@ -7,6 +7,10 @@
             <div class="tablik">
                 <table class="tablicek">
                     <tr>
+                        <td class="topic">Last edited:</td>
+                        <td>{{studentData.lastEdit}}</td>
+                    </tr>
+                    <tr>
                         <td class="topic">Name:</td>
                         <td>{{studentData.name}}</td>
                     </tr>
@@ -40,6 +44,8 @@
                     </tr>
                     <tr>
                         <td class="topic">Disabled:</td>
+                        <!-- <td *ngIf="studentData.disabled; else disabledElse">Yes</td>
+                        <ng-template #disabledElse><td>No</td></ng-template> -->
                         <td>{{studentData.disabled}}</td>
                     </tr>
                     <tr>
@@ -49,7 +55,7 @@
                 </table>
             </div>
             <div>
-                <button class="butonicek" [routerLink]="['/students']">Back to Students</button>
+                <button class="butonicek" (click)="back()">Back to Students</button>
             </div>
         </div>
     </div>

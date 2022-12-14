@@ -1,58 +1,37 @@
 {
   "posts": [
     {
-      "id": 1,
-      "name": "Nina",
-      "surname": "Mala",
-      "class": "1.A",
-      "age": 0,
-      "birthdate": "2007-11-15",
-      "studyField": "Network technologies",
-      "gender": "F",
-      "gradeAverage": 2,
-      "disabled": "false",
-      "awards": ""
-    },
-    {
-      "id": 2,
+      "id": 8,
+      "lastEdit": "14. 12. 2022 12:33:51",
       "name": "jozko",
-      "surname": "Mrkvicka",
-      "class": "4.C",
-      "age": null,
-      "birthdate": "2004-12-12",
-      "studyField": "Electrical engineering",
+      "surname": "dezko",
+      "class": "4.E",
+      "age": 20,
+      "birthdate": "2002-08-17",
+      "studyField": "Electronics",
       "gender": "M",
-      "gradeAverage": 1.4,
+      "gradeAverage": 2.2,
       "disabled": "false",
-      "awards": ""
+      "awards": [
+        "Ocenenie 1"
+      ]
     },
     {
-      "id": 3,
-      "lastEdit": "2022-12-13T09:44:24.288Z",
-      "name": "Vlado",
-      "surname": "Dezko",
-      "class": "4.D",
-      "age": 0,
-      "birthdate": "2000-01-20",
-      "studyField": "Electrical engineering",
-      "gender": "Other",
-      "gradeAverage": 3.8,
+      "id": 9,
+      "lastEdit": "14. 12. 2022 12:48:10",
+      "name": "ferko",
+      "surname": "mrkvicka",
+      "class": "3.C",
+      "age": 18,
+      "birthdate": "2004-07-21",
+      "studyField": "Network technologies",
+      "gender": "M",
+      "gradeAverage": 2.7,
       "disabled": "true",
-      "awards": ""
-    },
-    {
-      "id": 4,
-      "lastEdit": "13. 12. 2022 10:45:57",
-      "name": "who",
-      "surname": "asked",
-      "class": "1.C",
-      "age": 0,
-      "birthdate": "2008-09-09",
-      "studyField": "Inteligent technologies",
-      "gender": "M",
-      "gradeAverage": 1,
-      "disabled": "false",
-      "awards": ""
+      "awards": [
+        "Ocenenie 1",
+        "Ocenenie 2"
+      ]
     }
   ],
   "comments": [],

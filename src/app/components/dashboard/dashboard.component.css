@@ -78,6 +78,7 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 25px;
+    margin-left: 5px;
 }
 
 .tablicek {
@@ -98,6 +99,7 @@
 .headerik {
     display: flex;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .butonicekk {
@@ -111,7 +113,7 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 25px;
-    margin-left: 55%;
+    margin-left: 42%;
 }
 
 .footerik {

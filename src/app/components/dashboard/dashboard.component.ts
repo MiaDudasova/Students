@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ApiService } from 'src/app/shared/api.service';
+import { AuthService } from 'src/app/shared/auth.service';
 import { StudentModel } from './student.model';
 
 @Component({
@@ -14,7 +15,10 @@ export class DashboardComponent {
   studentData !: any;
   public age: number = 0;
   dateTime: any = new Date();
-  constructor (private formBuilder: FormBuilder, private api: ApiService) {}
+  // var str = "Apples are round, and apples are juicy."; 
+  // var splitted = str.split(" ", 3); 
+  // console.log(splitted)
+  constructor (private formBuilder: FormBuilder, private api: ApiService, private auth: AuthService) {}
 
   ngOnInit (): void {
     this.formValue = this.formBuilder.group({
@@ -31,13 +35,18 @@ export class DashboardComponent {
     this.getAllStudents();
   }
 
-  public CalculateAge(birthdate: number): void
-     {
-         if(birthdate){
-            var timeDiff = Math.abs(Date.now() - birthdate);
-            this.age = Math.floor((timeDiff / (1000 * 3600 * 24))/365);
-        }
+  public CalculateAge(dateOfBirth: any): number {
+    const today = new Date();
+    const birthDate = new Date(dateOfBirth);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
     }
+
+    return age;
+  }
 
   postStudentDetails(){
     this.studentModelObj.lastEdit = this.dateTime.toLocaleString();
@@ -45,12 +54,12 @@ export class DashboardComponent {
     this.studentModelObj.surname = this.formValue.value.surname;
     this.studentModelObj.class = this.formValue.value.class;
     this.studentModelObj.birthdate = this.formValue.value.birthdate;
-    //this.studentModelObj.age = this.CalculateAge(this.formValue.value.birthdate);
+    this.studentModelObj.age = this.CalculateAge(this.formValue.value.birthdate);
     this.studentModelObj.studyField = this.formValue.value.studyField;
     this.studentModelObj.gender = this.formValue.value.gender;
     this.studentModelObj.gradeAverage = this.formValue.value.gradeAverage;
     this.studentModelObj.disabled = this.formValue.value.disabled;
-    this.studentModelObj.awards = this.formValue.value.awards;
+    this.studentModelObj.awards = this.formValue.value.awards.split(";");
 
     this.api.postStudent(this.studentModelObj)
     .subscribe(res=>{
@@ -82,7 +91,7 @@ export class DashboardComponent {
 
   editStudent(student: any){
     this.studentModelObj.id = student.id;
-    this.studentModelObj.lastEdit = student.lastEdit;
+    this.studentModelObj.lastEdit = this.dateTime.toLocaleString();;
     this.formValue.controls["name"].setValue(student.name);
     this.formValue.controls["surname"].setValue(student.surname);
     this.formValue.controls["class"].setValue(student.class);
@@ -113,5 +122,9 @@ export class DashboardComponent {
       this.formValue.reset();
       this.getAllStudents();
     })
+  }
+
+  logout() {
+    this.auth.logout();
   }
 }

@@ -52,3 +52,30 @@
     color: #5BA199;
     font-size: 20px;
 }
+
+.listik {
+    margin: 15px 90px;
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+
+.headerik {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.butonicekk {
+    background-color: #5BA199;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-left: 38%;
+}
