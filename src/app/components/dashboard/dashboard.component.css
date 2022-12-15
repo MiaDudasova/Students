@@ -1,12 +1,12 @@
 .container {
-    background-color: #5BA199;
+    background-color: white;
     display: flex;
     min-height: 100vh;
 }
 
 .rowik {
     max-width: 90%;
-    background-color: #5BA199;
+    background-color: white;
     flex-direction: row;
     display: flex;
     margin: 0px auto;
@@ -14,11 +14,11 @@
 
 .colik {
     margin: 0px auto;
-    background-color: #5BA199;
+    background-color: white;
 }
 
 .add-student {
-    background-color: #5BA199;
+    background-color: var(--four);
     /* Green */
     color: white;
     padding: 10px 20px;
@@ -29,7 +29,7 @@
 }
 
 .xd {
-    background-color: #E5E3E4;
+    background-color: var(--form);
     max-width: fit-content;
     padding: 15px;
     border-radius: 25px;
@@ -38,7 +38,7 @@
 
 
 .butonik {
-    background-color: #5BA199;
+    background-color: var(--four);
     /* Green */
     border: none;
     color: white;
@@ -52,14 +52,15 @@
 }
 
 .coulik {
-    background-color: #DDBEAA;
+    background-color: var(--two);
     width: 800px;
     padding: 20px;
     margin-left: 15px;
+    box-shadow: 0px 0px 20px var(--shadow);
 }
 
 .kartik {
-    background-color: #DDBEAA;
+    background-color: var(--two);
     padding: 5px;
 }
 
@@ -68,8 +69,7 @@
 }
 
 .butonicek {
-    background-color: #5BA199;
-    /* Green */
+    background-color: var(--four);
     border: none;
     color: white;
     padding: 8px 20px;
@@ -83,17 +83,18 @@
 
 .tablicek {
     margin: 20px;
-    background-color: #E5E3E4;
+    background-color: var(--form);
     margin: 0px 10px;
     border-radius: 25px;
     padding: 20px 10px 10px 30px;
 }
 
 .listik {
-    margin: 15px 25px;
-    font-size: 20px;
+    margin: 5px 25px;
+    font-size: 25px;
     font-family: monospace;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 
 .headerik {
@@ -103,7 +104,7 @@
 }
 
 .butonicekk {
-    background-color: #5BA199;
+    background-color: var(--four);
     /* Green */
     border: none;
     color: white;
@@ -122,10 +123,9 @@
 }
 
 .butoniky {
-    background-color: aliceblue;
-    /* Green */
+    background-color: var(--form);
     border: none;
-    color: #5BA199;
+    color: var(--four);
     padding: 0px 20px;
     text-align: center;
     text-decoration: none;
@@ -133,12 +133,11 @@
     font-size: 16px;
     border-radius: 25px;
     margin-left: 55%;
-    border: 1px solid #5BA199;
+    border: 1px solid var(--four);
 }
 
 .butonik {
-    background-color: #5BA199;
-    /* Green */
+    background-color: var(--four);
     border: none;
     color: white;
     padding: 4px 20px;
@@ -147,4 +146,9 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 25px;
+}
+
+.butonicekk:hover, .butonik:hover, .butonicek:hover, .butoniky:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 10px 20px var(--five);
 }

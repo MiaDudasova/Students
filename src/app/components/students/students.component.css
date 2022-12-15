@@ -2,20 +2,21 @@
     display: flex;
     width: 100%;
     height: fit-content;
-    background-color: #5BA199;
+    background-color: white;
     justify-content: center;
     align-items: center;
 }
 
 .rowik {
-    background-color: #DDBEAA;
+    background-color: var(--two);
     min-height: 100vh;
-    width: 60%;
+    width: 65%;
+    box-shadow: 0px 0px 20px var(--shadow);    
 }
 
 .colik {
     margin-top: 5%;
-    background-color: #DDBEAA;
+    background-color: var(--two);
 }
 
 .student-list {
@@ -27,37 +28,17 @@
 
 .xd {
     margin: 20px;
-    background-color: #E5E3E4;
+    background-color: var(--form);
     margin: 0px 80px;
     border-radius: 25px;
     padding: 10px 10px 10px 30px;
 }
 
-.butonik {
-    background-color: #5BA199;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 8px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 25px;
-    margin: 10px 0px;
-}
-
-.detail {
-    text-decoration: none;
-    color: #5BA199;
-    font-size: 20px;
-}
-
 .listik {
-    margin: 15px 90px;
-    font-size: 20px;
+    margin: 5px 90px;
+    font-size: 25px;
     font-family: monospace;
-    color: black;
+    color: white;
 }
 
 .headerik {
@@ -67,8 +48,7 @@
 }
 
 .butonicekk {
-    background-color: #5BA199;
-    /* Green */
+    background-color: var(--four);
     border: none;
     color: white;
     padding: 0px 20px;
@@ -78,4 +58,10 @@
     font-size: 16px;
     border-radius: 25px;
     margin-left: 38%;
+    transition: all 150ms linear;
+}
+
+.butonicekk:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 10px 20px var(--five);
 }

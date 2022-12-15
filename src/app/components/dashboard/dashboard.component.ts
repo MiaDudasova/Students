@@ -15,9 +15,6 @@ export class DashboardComponent {
   studentData !: any;
   public age: number = 0;
   dateTime: any = new Date();
-  // var str = "Apples are round, and apples are juicy."; 
-  // var splitted = str.split(" ", 3); 
-  // console.log(splitted)
   constructor (private formBuilder: FormBuilder, private api: ApiService, private auth: AuthService) {}
 
   ngOnInit (): void {
@@ -59,7 +56,7 @@ export class DashboardComponent {
     this.studentModelObj.gender = this.formValue.value.gender;
     this.studentModelObj.gradeAverage = this.formValue.value.gradeAverage;
     this.studentModelObj.disabled = this.formValue.value.disabled;
-    this.studentModelObj.awards = this.formValue.value.awards.split(";");
+    this.studentModelObj.awards = this.formValue.value.awards.split(",");
 
     this.api.postStudent(this.studentModelObj)
     .subscribe(res=>{

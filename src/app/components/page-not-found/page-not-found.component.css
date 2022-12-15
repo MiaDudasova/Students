@@ -4,18 +4,20 @@
     align-items: center;
     width: 100%;
     height: fit-content;
-    background-color: #5BA199;
+    background-color: white;
 }
 
 .rowik {
-    background-color: #DDBEAA;
-    width: 50%;
+    background-color: var(--two);
+    width: 65%;
     height: 100vh;
+    box-shadow: 0px 0px 20px var(--shadow);
 }
 
 .colik {
     margin: 85px;
-    margin-top: 45%;
+    margin-top: 35%;
+    padding: 0px 100px;
 }
 
 .pagik {
@@ -26,12 +28,11 @@
     margin: 0px auto;
     margin-top: 10px;
     font-style: italic;
-    color: aliceblue;
+    color: var(--form);
 }
 
 .butonicek {
-    background-color: #5BA199;
-    /* Green */
+    background-color: var(--four);
     border: none;
     color: white;
     padding: 8px 20px;
@@ -41,4 +42,9 @@
     font-size: 16px;
     border-radius: 25px;
     margin-top: 5px;
+}
+
+.butonicek:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 10px 20px var(--five);
 }

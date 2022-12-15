@@ -2,10 +2,10 @@
   "posts": [
     {
       "id": 8,
-      "lastEdit": "14. 12. 2022 12:33:51",
+      "lastEdit": "15. 12. 2022 13:26:43",
       "name": "jozko",
       "surname": "dezko",
-      "class": "4.E",
+      "class": "4.B",
       "age": 20,
       "birthdate": "2002-08-17",
       "studyField": "Electronics",
@@ -31,6 +31,39 @@
       "awards": [
         "Ocenenie 1",
         "Ocenenie 2"
+      ]
+    },
+    {
+      "id": 10,
+      "lastEdit": "15. 12. 2022 13:27:11",
+      "name": "nina",
+      "surname": "mala",
+      "class": "1.A",
+      "age": 14,
+      "birthdate": "2008-10-16",
+      "studyField": "Artificial intelligence",
+      "gender": "F",
+      "gradeAverage": 1.4,
+      "disabled": "false",
+      "awards": [
+        "Cena",
+        "Ocenenie"
+      ]
+    },
+    {
+      "id": 11,
+      "lastEdit": "15. 12. 2022 13:28:45",
+      "name": "vlado",
+      "surname": "modry",
+      "class": "3.A",
+      "age": 17,
+      "birthdate": "2005-04-13",
+      "studyField": "Programming",
+      "gender": "M",
+      "gradeAverage": 2.7,
+      "disabled": "false",
+      "awards": [
+        ""
       ]
     }
   ],
