@@ -22,7 +22,7 @@ export class PageNotFoundComponent {
       this.router.navigate(['/dashboard']);
     }
     else {
-      this.router.navigate(['/students']);
+      this.router.navigate(['/login']);
     }
   }
 }

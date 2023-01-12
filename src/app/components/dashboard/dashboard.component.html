@@ -49,7 +49,6 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Student</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form [formGroup]="formValue">
@@ -121,7 +120,7 @@
                 </form>
             </div>
             <div class="footerik">
-                <button type="button" id="cancel" class="butoniky" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="cancel" class="butoniky" data-bs-dismiss="modal" (click)="close()">Close</button>
                 <button type="button" class="butonik" (click)="postStudentDetails()">Add Student</button>
             </div>
         </div>
@@ -134,7 +133,6 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Edit Student</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form [formGroup]="formValue">
@@ -202,7 +200,7 @@
                 </form>
             </div>
             <div class="footerik">
-                <button type="button" id="cancell" class="butoniky" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="cancell" class="butoniky" data-bs-dismiss="modal" (click)="close()">Close</button>
                 <button type="button" class="butonik" (click)="updateStudent()">Edit Student</button>
             </div>
         </div>

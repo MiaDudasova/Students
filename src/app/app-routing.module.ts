@@ -9,11 +9,10 @@ import { AuthGuard } from './shared/auth.guard';
 import { AuthService } from './shared/auth.service';
 
 const routes: Routes = [
-  {path: '', redirectTo:'students', pathMatch:'full'},
+  {path: '', redirectTo:'login', pathMatch:'full'},
   {path: 'dashboard', component : DashboardComponent,canActivate:[AuthGuard]},
-  {path: 'detail/:id', component : StudentDetailComponent},
+  {path: 'detail/:id', component : StudentDetailComponent,canActivate:[AuthGuard]},
   {path: 'login', component : LoginComponent},
-  {path: 'students', component : StudentsComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
 

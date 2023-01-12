@@ -124,4 +124,8 @@ export class DashboardComponent {
   logout() {
     this.auth.logout();
   }
+
+  close() {
+    this.formValue.reset();
+  }
 }
